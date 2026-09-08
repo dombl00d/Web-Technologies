@@ -5,10 +5,11 @@ body {
 }
 
 h1, h2 {
-  background-color: #28225c;
-  color: #FFFFFF;
+  background-color: #273582;
+  color: #28225c;
   border: 2px solid #FFFFFF;
   padding: 5px;
+  font-family: Aptos;
 }
 
 img {
