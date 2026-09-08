@@ -16,4 +16,5 @@ img {
   border: 3px solid #ffde13
   border-radius: 8px;
   padding: 5px;
+  display: inline;
 }
