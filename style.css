@@ -1,20 +1,20 @@
 body {
-  background-color: #0abaee;
-  color: #FFFFFF;
+  background-color: #bce3fa;
+  color: #28225c;
   font-family: Aptos;
 }
 
 h1, h2 {
-  background-color: #273582;
+  background-color: #0abaee;
   color: #28225c;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #28225c;
   padding: 5px;
   font-family: Aptos;
 }
 
 img {
     width: 400px;
-    border: 3px solid #FFFFFF;
+    border: 3px solid #28225c;
     border-radius: 8px;
     padding: 0px;
     margin-right: 20px;
