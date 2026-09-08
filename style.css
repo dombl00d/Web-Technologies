@@ -2,6 +2,8 @@ body {
   background-color: #bce3fa;
   color: #28225c;
   font-family: Aptos;
+  margin-left: 50px;
+  margin-right: 50px
 }
 
 h1, h2 {
