@@ -1,22 +1,21 @@
 body {
-  background-color: #632575;
-  color: #ffde13;
+  background-color: #0abaee;
+  color: #FFFFFF;
   font-family: Aptos;
 }
 
 h1, h2 {
-  background-color: #4f1f6a;
-  color: #ffde13;
-  border: 2px solid #ffde13;
+  background-color: #273582;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
   padding: 5px;
 }
 
 img {
-    width: 300px;
-    border: 3px solid #ffde13;
+    width: 400px;
+    border: 3px solid #FFFFFF;
     border-radius: 8px;
-    padding: 5px;
-    float: left;
+    padding: 0px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
