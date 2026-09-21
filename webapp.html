@@ -78,6 +78,94 @@
             please connect with me!
         </p>
 
+        <h2>Ask a Question</h2>
+
+<p>
+    If you would like to know more about my professional background,
+    research experience, or certifications, please complete the form
+    below and submit your question.
+</p>
+
+    <fieldset>
+        <legend>Your Details</legend>
+
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname" required>
+        <br><br>
+
+        <label for="surname">Second Name:</label><br>
+        <input type="text" id="surname" name="surname" required>
+        <br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Question Type</legend>
+
+        <p>
+            Please select the category that best describes your question:
+        </p>
+
+        <input
+            type="radio"
+            id="background"
+            name="questiontype"
+            value="Professional Background"
+            required>
+
+        <label for="background">
+            Professional Background
+        </label>
+        <br>
+
+        <input
+            type="radio"
+            id="research"
+            name="questiontype"
+            value="Research Experience">
+
+        <label for="research">
+            Research Experience
+        </label>
+        <br>
+
+        <input
+            type="radio"
+            id="certification"
+            name="questiontype"
+            value="Certification Advice">
+
+        <label for="certification">
+            Certification Advice
+        </label>
+
+    </fieldset>
+
+    <br>
+
+    <label for="question">Your Question:</label><br>
+
+    <textarea
+        id="question"
+        name="question"
+        rows="6"
+        cols="60"
+        placeholder="Please enter your question here..."
+        required></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Submit Question">
+    <input type="reset" value="Clear Form">
+
+</form>
+
     </main>
 
 </body>
