@@ -40,7 +40,8 @@
         </p>
 
         <figure>
-            cert.png
+            <img src="cert.png"
+                 alt="Microsoft Certified AI Transformation Leader certification">
 
             <figcaption>
                 Microsoft Certified AI Transformation Leader certification.
@@ -86,7 +87,7 @@
             below and submit your question.
         </p>
 
-        <form>
+        <form id="questionForm">
 
             <fieldset>
                 <legend>Your Details</legend>
@@ -168,31 +169,25 @@
 
         </form>
 
-        <div id="response"></div>
-
     </main>
 
     <script>
 
-        const submitButton =
-            document.querySelector('input[type="submit"]');
+        document.getElementById("questionForm")
+            .addEventListener("submit", function (event) {
 
-        submitButton.addEventListener("click", function (event) {
+                event.preventDefault();
 
-            event.preventDefault();
+                const firstName =
+                    document.getElementById("firstname").value;
 
-            const firstName =
-                document.getElementById("firstname").value;
+                alert(
+                    "Thank you " +
+                    firstName +
+                    " for your question. Your submission has been received."
+                );
 
-            const response =
-                document.getElementById("response");
-
-            response.innerHTML =
-                `<h3>Thank You</h3>
-                 <p>Thank you ${firstName} for your question.
-                 I will respond as soon as possible.</p>`;
-
-        });
+            });
 
     </script>
 
