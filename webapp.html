@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Dom Blood Portfolio of Works V1</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +15,7 @@
         <h1>Overview</h1>
 
         <p>
-            This is a small demonstration of my portfolio of works. Whilst I am not a web developer;
+            This is a small demonstration of my portfolio of works. Whilst I am not a web developer,
             I have a keen interest in increasing my knowledge of web technologies and the development
             of web applications. First, I will provide supplementary information about myself and my
             background, then I will draw focus to my current fundamental knowledge with regards to web
@@ -42,7 +40,7 @@
         </p>
 
         <figure>
-            <img src="cert.png" alt text="Microsoft Certified: AI Transformation Leader certification"
+            cert.png
 
             <figcaption>
                 Microsoft Certified AI Transformation Leader certification.
@@ -57,7 +55,9 @@
             for Power Automate workflows. I have also previously created an index.html page for a
             journal publication; of which, I will appear in two papers, due to be released
             imminently.
+        </p>
 
+        <p>
             Information on the journal can be found in the
             <a href="https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf"
                target="_blank"
@@ -80,93 +80,121 @@
 
         <h2>Ask a Question</h2>
 
-<p>
-    If you would like to know more about my professional background,
-    research experience, or certifications, please complete the form
-    below and submit your question.
-</p>
-
-    <fieldset>
-        <legend>Your Details</legend>
-
-        <label for="firstname">First Name:</label><br>
-        <input type="text" id="firstname" name="firstname" required>
-        <br><br>
-
-        <label for="surname">Second Name:</label><br>
-        <input type="text" id="surname" name="surname" required>
-        <br><br>
-
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-
-    </fieldset>
-
-    <br>
-
-    <fieldset>
-        <legend>Question Type</legend>
-
         <p>
-            Please select the category that best describes your question:
+            If you would like to know more about my professional background,
+            research experience, or certifications, please complete the form
+            below and submit your question.
         </p>
 
-        <input
-            type="radio"
-            id="background"
-            name="questiontype"
-            value="Professional Background"
-            required>
+        <form>
 
-        <label for="background">
-            Professional Background
-        </label>
-        <br>
+            <fieldset>
+                <legend>Your Details</legend>
 
-        <input
-            type="radio"
-            id="research"
-            name="questiontype"
-            value="Research Experience">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname" required>
+                <br><br>
 
-        <label for="research">
-            Research Experience
-        </label>
-        <br>
+                <label for="surname">Surname:</label><br>
+                <input type="text" id="surname" name="surname" required>
+                <br><br>
 
-        <input
-            type="radio"
-            id="certification"
-            name="questiontype"
-            value="Certification Advice">
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
 
-        <label for="certification">
-            Certification Advice
-        </label>
+            </fieldset>
 
-    </fieldset>
+            <br>
 
-    <br>
+            <fieldset>
+                <legend>Question Type</legend>
 
-    <label for="question">Your Question:</label><br>
+                <p>
+                    Please select the category that best describes your question:
+                </p>
 
-    <textarea
-        id="question"
-        name="question"
-        rows="6"
-        cols="60"
-        placeholder="Please enter your question here..."
-        required></textarea>
+                <input
+                    type="radio"
+                    id="background"
+                    name="questiontype"
+                    value="Professional Background"
+                    required>
 
-    <br><br>
+                <label for="background">
+                    Professional Background
+                </label>
+                <br>
 
-    <input type="submit" value="Submit Question">
-    <input type="reset" value="Clear Form">
+                <input
+                    type="radio"
+                    id="research"
+                    name="questiontype"
+                    value="Research Experience">
 
-</form>
+                <label for="research">
+                    Research Experience
+                </label>
+                <br>
+
+                <input
+                    type="radio"
+                    id="certification"
+                    name="questiontype"
+                    value="Certification Advice">
+
+                <label for="certification">
+                    Certification Advice
+                </label>
+
+            </fieldset>
+
+            <br>
+
+            <label for="question">Your Question:</label><br>
+
+            <textarea
+                id="question"
+                name="question"
+                rows="6"
+                cols="60"
+                placeholder="Please enter your question here..."
+                required></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit Question">
+            <input type="reset" value="Clear Form">
+
+        </form>
+
+        <div id="response"></div>
 
     </main>
+
+    <script>
+
+        const submitButton =
+            document.querySelector('input[type="submit"]');
+
+        submitButton.addEventListener("click", function (event) {
+
+            event.preventDefault();
+
+            const firstName =
+                document.getElementById("firstname").value;
+
+            const response =
+                document.getElementById("response");
+
+            response.innerHTML =
+                `<h3>Thank You</h3>
+                 <p>Thank you ${firstName} for your question.
+                 I will respond as soon as possible.</p>`;
+
+        });
+
+    </script>
 
 </body>
 
