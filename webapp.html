@@ -40,8 +40,7 @@
         </p>
 
         <figure>
-            <img src="cert.png"
-                 alt="Microsoft Certified AI Transformation Leader certification">
+            cert.png
 
             <figcaption>
                 Microsoft Certified AI Transformation Leader certification.
@@ -54,15 +53,15 @@
             My current knowledge of web technologies is limited to the basics of HTML. I have only
             recently started to explore the language within my role where I frequently utilise HTML
             for Power Automate workflows. I have also previously created an index.html page for a
-            journal publication; of which, I will appear in two papers, due to be released
+            journal publication; of which, I will appear in two papers due to be released
             imminently.
         </p>
 
         <p>
             Information on the journal can be found in the
             <a href="https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf"
-               target="_blank"
-               rel="noopener noreferrer">
+                target="_blank"
+                rel="noopener noreferrer">
                 DigiSasLab Call for Papers document
             </a>.
         </p>
@@ -72,9 +71,9 @@
         <p>
             For more information about me, please visit
             <a href="https://www.linkedin.com/in/dominic-blood-288a4b236/"
-               target="_blank"
-               rel="noopener noreferrer">
-                Dom Blood's LinkedIn profile
+                target="_blank"
+                rel="noopener noreferrer">
+                Dom Blood's LinkedIn Profile
             </a>,
             please connect with me!
         </p>
@@ -90,33 +89,44 @@
         <form id="questionForm">
 
             <fieldset>
+
                 <legend>Your Details</legend>
 
                 <label for="firstname">First Name:</label><br>
-                <input type="text" id="firstname" name="firstname" required>
+                <input type="text"
+                    id="firstname"
+                    name="firstname"
+                    required>
+
                 <br><br>
 
                 <label for="surname">Surname:</label><br>
-                <input type="text" id="surname" name="surname" required>
+                <input type="text"
+                    id="surname"
+                    name="surname"
+                    required>
+
                 <br><br>
 
                 <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required>
-                <br><br>
+                <input type="email"
+                    id="email"
+                    name="email"
+                    required>
 
             </fieldset>
 
             <br>
 
             <fieldset>
+
                 <legend>Question Type</legend>
 
                 <p>
                     Please select the category that best describes your question:
                 </p>
 
-                <input
-                    type="radio"
+                <input type="radio"
                     id="background"
                     name="questiontype"
                     value="Professional Background"
@@ -125,10 +135,10 @@
                 <label for="background">
                     Professional Background
                 </label>
+
                 <br>
 
-                <input
-                    type="radio"
+                <input type="radio"
                     id="research"
                     name="questiontype"
                     value="Research Experience">
@@ -136,10 +146,10 @@
                 <label for="research">
                     Research Experience
                 </label>
+
                 <br>
 
-                <input
-                    type="radio"
+                <input type="radio"
                     id="certification"
                     name="questiontype"
                     value="Certification Advice">
@@ -169,6 +179,18 @@
 
         </form>
 
+        <section id="confirmationSection">
+
+            <h2>Submission Confirmation</h2>
+
+            <div id="confirmation">
+                <p>
+                    No questions have been submitted yet.
+                </p>
+            </div>
+
+        </section>
+
     </main>
 
     <script>
@@ -181,11 +203,33 @@
                 const firstName =
                     document.getElementById("firstname").value;
 
-                alert(
-                    "Thank you " +
+                const surname =
+                    document.getElementById("surname").value;
+
+                const question =
+                    document.getElementById("question").value;
+
+                const questionType =
+                    document.querySelector(
+                        'input[name="questiontype"\]:checked'
+                    ).value;
+
+                document.getElementById("confirmation").innerHTML =
+                    "<p><strong>Thank you " +
                     firstName +
-                    " for your question. Your submission has been received."
-                );
+                    " " +
+                    surname +
+                    ".</strong></p>" +
+
+                    "<p>Your question has been successfully received.</p>" +
+
+                    "<p><strong>Question Type:</strong> " +
+                    questionType +
+                    "</p>" +
+
+                    "<p><strong>Your Question:</strong> " +
+                    question +
+                    "</p>";
 
             });
 
