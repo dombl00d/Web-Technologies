@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dom Blood Portfolio of Works V1</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -25,36 +29,45 @@
         <h2>About Me</h2>
 
         <p>
-            My name is Dom Blood. I graduated from SHU in 2024 with a First Class Honours degree in IT
-            Consultancy. My dissertation was based on the needs and requirements of effective Enterprise
-            Architecture practices within local authorities. Aptly titled
-            <strong>"Bringing Enterprise Architecture (EA) Value to Local Government: A Case Study"</strong>,
-            where I explored the benefits of EA, and how its practices could be utilised to avoid
-            unnecessary costs within a major project implementation.
+            My name is Dom Blood. I graduated from Sheffield Hallam University in 2024 with a
+            First Class Honours degree in IT Consultancy. My dissertation was based on the needs
+            and requirements of effective Enterprise Architecture practices within local authorities.
+            Aptly titled
+            <strong>
+                "Bringing Enterprise Architecture (EA) Value to Local Government:
+                A Case Study"
+            </strong>,
+            where I explored the benefits of Enterprise Architecture and how its
+            practices could be utilised to avoid unnecessary costs within major
+            project implementations.
         </p>
 
         <p>
-            I have worked in Local Government for 8 years now, progressing from a L2 apprentice,
-            through to my Master's where I am now an AI Architect. Recently, I obtained the
-            Microsoft Certified AI Transformation Leader certification, as below:
+            I have worked in Local Government for 8 years, progressing from a
+            Level 2 Apprentice through to my Master's degree where I now work
+            as an AI Architect. Recently, I obtained the Microsoft Certified AI
+            Transformation Leader certification, as shown below.
         </p>
 
         <figure>
+
             cert.png
 
             <figcaption>
-                Microsoft Certified AI Transformation Leader certification.
+                Microsoft Certified AI Transformation Leader Certification.
             </figcaption>
+
         </figure>
 
         <h2>My Current Knowledge of Web Technologies</h2>
 
         <p>
-            My current knowledge of web technologies is limited to the basics of HTML. I have only
-            recently started to explore the language within my role where I frequently utilise HTML
-            for Power Automate workflows. I have also previously created an index.html page for a
-            journal publication; of which, I will appear in two papers due to be released
-            imminently.
+            My current knowledge of web technologies is limited to the basics of
+            HTML, CSS, and JavaScript. I have only recently started to explore
+            these technologies further within my role, where I frequently utilise
+            HTML for Power Automate workflows. I have also previously created an
+            index.html page for a journal publication and currently continue to
+            develop my knowledge through postgraduate study.
         </p>
 
         <p>
@@ -62,9 +75,31 @@
             <a href="https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf"
                 target="_blank"
                 rel="noopener noreferrer">
-                DigiSasLab Call for Papers document
+                DigiSasLab Call for Papers Document
             </a>.
         </p>
+
+        <h2>Latest Technology News</h2>
+
+        <p>
+            As an AI Architect and technology enthusiast, I am interested in
+            keeping up to date with developments across science, technology,
+            artificial intelligence, and innovation. The latest article below
+            is retrieved dynamically using a public REST API and displayed
+            when the page loads.
+        </p>
+
+        <section id="newsSection">
+
+            <div id="newsContainer">
+
+                <p>
+                    Loading latest technology news...
+                </p>
+
+            </div>
+
+        </section>
 
         <h2>More Information</h2>
 
@@ -74,8 +109,8 @@
                 target="_blank"
                 rel="noopener noreferrer">
                 Dom Blood's LinkedIn Profile
-            </a>,
-            please connect with me!
+            </a>
+            and feel free to connect with me.
         </p>
 
         <h2>Ask a Question</h2>
@@ -92,24 +127,33 @@
 
                 <legend>Your Details</legend>
 
-                <label for="firstname">First Name:</label><br>
-                <input type="text"
+                <label for="firstname">First Name:</label>
+                <br>
+
+                <input
+                    type="text"
                     id="firstname"
                     name="firstname"
                     required>
 
                 <br><br>
 
-                <label for="surname">Surname:</label><br>
-                <input type="text"
+                <label for="surname">Surname:</label>
+                <br>
+
+                <input
+                    type="text"
                     id="surname"
                     name="surname"
                     required>
 
                 <br><br>
 
-                <label for="email">Email Address:</label><br>
-                <input type="email"
+                <label for="email">Email Address:</label>
+                <br>
+
+                <input
+                    type="email"
                     id="email"
                     name="email"
                     required>
@@ -123,10 +167,11 @@
                 <legend>Question Type</legend>
 
                 <p>
-                    Please select the category that best describes your question:
+                    Please select the category that best describes your question.
                 </p>
 
-                <input type="radio"
+                <input
+                    type="radio"
                     id="background"
                     name="questiontype"
                     value="Professional Background"
@@ -138,7 +183,8 @@
 
                 <br>
 
-                <input type="radio"
+                <input
+                    type="radio"
                     id="research"
                     name="questiontype"
                     value="Research Experience">
@@ -149,7 +195,8 @@
 
                 <br>
 
-                <input type="radio"
+                <input
+                    type="radio"
                     id="certification"
                     name="questiontype"
                     value="Certification Advice">
@@ -162,7 +209,11 @@
 
             <br>
 
-            <label for="question">Your Question:</label><br>
+            <label for="question">
+                Your Question:
+            </label>
+
+            <br>
 
             <textarea
                 id="question"
@@ -184,9 +235,11 @@
             <h2>Submission Confirmation</h2>
 
             <div id="confirmation">
+
                 <p>
                     No questions have been submitted yet.
                 </p>
+
             </div>
 
         </section>
@@ -195,7 +248,12 @@
 
     <script>
 
-        document.getElementById("questionForm")
+        /*
+         * Question Form Functionality
+         */
+
+        document
+            .getElementById("questionForm")
             .addEventListener("submit", function (event) {
 
                 event.preventDefault();
@@ -211,10 +269,11 @@
 
                 const questionType =
                     document.querySelector(
-                        'input[name="questiontype"\]:checked'
+                        'input[name="questiontype"]:checked'
                     ).value;
 
                 document.getElementById("confirmation").innerHTML =
+
                     "<p><strong>Thank you " +
                     firstName +
                     " " +
@@ -229,6 +288,76 @@
 
                     "<p><strong>Your Question:</strong> " +
                     question +
+                    "</p>";
+
+            });
+
+        /*
+         * Technology News API Integration
+         */
+
+        fetch("https://api.spaceflightnewsapi.net/v4/articles/?limit=1")
+
+            .then(function (response) {
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Unable to retrieve article."
+                    );
+
+                }
+
+                return response.json();
+
+            })
+
+            .then(function (data) {
+
+                const article = data.results[0];
+
+                document.getElementById("newsContainer").innerHTML =
+
+                    "<article>" +
+
+                    "<h3>" +
+                    article.title +
+                    "</h3>" +
+
+                    "<p>" +
+                    article.summary +
+                    "</p>" +
+
+                    "<p><strong>Source:</strong> " +
+                    article.news_site +
+                    "</p>" +
+
+                    "<p><strong>Published:</strong> " +
+                    new Date(
+                        article.published_at
+                    ).toLocaleDateString('en-GB') +
+                    "</p>" +
+
+                    "<p>" +
+                    "<a href='" +
+                    article.url +
+                    "' target='_blank' rel='noopener noreferrer'>" +
+                    "Read Full Article" +
+                    "</a>" +
+                    "</p>" +
+
+                    "</article>";
+
+            })
+
+            .catch(function (error) {
+
+                console.error(error);
+
+                document.getElementById("newsContainer").innerHTML =
+
+                    "<p>" +
+                    "The latest technology article could not be loaded." +
                     "</p>";
 
             });
