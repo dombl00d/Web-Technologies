@@ -1,104 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dom Blood Portfolio of Works V2</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
 <body class="bg-light">
 
-    <main class="container py-4">
+    <main class="container py-5">
 
-        <h1 class="display-4 mb-4">
-            Overview
-        </h1>
+        <div class="card shadow-sm mb-4">
 
-        <p class="lead">
-            This is a small demonstration of my portfolio of works. Whilst I am
-            not a web developer, I have a keen interest in increasing my
-            knowledge of web technologies and the development of web
-            applications.
-        </p>
+            <div class="card-body">
 
-        <hr>
+                <h1 class="display-4">
+                    Overview
+                </h1>
 
-        <h2 class="mt-5 mb-3">
-            About Me
-        </h2>
+                <p class="lead">
+                    This is a small demonstration of my portfolio of works.
+                    Whilst I am not a web developer, I have a keen interest in
+                    increasing my knowledge of web technologies and the
+                    development of web applications.
+                </p>
 
-        <p>
-            My name is Dom Blood. I graduated from Sheffield Hallam University
-            in 2024 with a First Class Honours degree in IT Consultancy.
-        </p>
+            </div>
 
-        <p>
-            Aptly titled
-            <strong>
-                "Bringing Enterprise Architecture (EA) Value to Local Government:
-                A Case Study"
-            </strong>,
-            I explored the benefits of Enterprise Architecture and how its
-            practices could be utilised to avoid unnecessary costs within major
-            project implementations.
-        </p>
+        </div>
 
-        <p>
-            I have worked in Local Government for 8 years, progressing from a
-            Level 2 Apprentice through to my Master's degree where I now work
-            as an AI Architect. Recently, I obtained the Microsoft Certified AI
-            Transformation Leader certification.
-        </p>
+        <div class="card shadow-sm mb-4">
 
-        <figure class="text-center my-4">
+            <div class="card-body">
 
-            <img
-                id="certificationImage"
-                src="cert.png"
-                alt="Microsoft Certified AI Transformation Leader Certification"
-                class="img-fluid rounded shadow">
+                <h2 class="h2 mb-3">
+                    About Me
+                </h2>
 
-            <figcaption class="text-muted mt-2">
-                Microsoft Certified AI Transformation Leader Certification.
-            </figcaption>
+                <p>
+                    My name is Dom Blood. I graduated from Sheffield Hallam
+                    University in 2024 with a First Class Honours degree in IT
+                    Consultancy.
+                </p>
 
-        </figure>
+                <p>
+                    Aptly titled
+                    <strong>
+                        "Bringing Enterprise Architecture (EA) Value to Local
+                        Government: A Case Study"
+                    </strong>,
+                    I explored the benefits of Enterprise Architecture and how
+                    its practices could be utilised to avoid unnecessary costs
+                    within major project implementations.
+                </p>
 
-        <hr>
+                <p>
+                    I have worked in Local Government for eight years,
+                    progressing from a Level 2 Apprentice through to my
+                    Master's degree where I now work as an AI Architect.
+                    Recently, I obtained the Microsoft Certified AI
+                    Transformation Leader certification.
+                </p>
 
-        <h2 class="mt-5 mb-3">
-            My Current Knowledge of Web Technologies
-        </h2>
+                <figure class="text-center mt-4">
 
-        <p>
-            My current knowledge of web technologies is limited to HTML, CSS
-            and JavaScript. I continue to develop my understanding through both
-            my professional role and postgraduate study.
-        </p>
+                    cert.png
 
-        <p>
-            Information on the journal can be found in the
+                    <figcaption class="mt-3 text-muted">
+                        Microsoft Certified AI Transformation Leader Certification.
+                    </figcaption>
 
-            <a
-                href="https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf"
-                target="_blank"
-                rel="noopener noreferrer">
+                </figure>
 
-                DigiSasLab Call for Papers Document
+            </div>
 
-            </a>.
-        </p>
+        </div>
 
-        <hr>
+        <div class="card shadow-sm mb-4">
 
-        <h2 class="mt-5 mb-3">
-            Latest Technology News
-        </h2>
+            <div class="card-body">
 
-        <p>
-            The latest article below is retrieved dynamically using a public
-            REST API when the page loads.
-        </p>
+                <h2 class="h2 mb-3">
+                    My Current Knowledge of Web Technologies
+                </h2>
 
-        <section id="newsSection">
+                <p>
+                    My current knowledge of web technologies is limited to the
+                    fundamentals of HTML, CSS and JavaScript. I continue to
+                    develop my understanding through both my professional role
+                    and postgraduate study.
+                </p>
 
-            <div
-                id="newsContainer"
-                class="card shadow-sm">
+                <p>
+                    Information on the journal can be found in the
+                    <a
+                        href="https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
 
-                <div class="card-body">
+                        DigiSasLab Call for Papers Document
+
+                    </a>.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                <h2 class="h2 mb-3">
+                    Latest Technology News
+                </h2>
+
+                <p>
+                    The latest article below is retrieved dynamically
+                    using a public REST API.
+                </p>
+
+                <div
+                    id="newsContainer"
+                    class="border rounded p-3">
 
                     <p>
                         Loading latest technology news...
@@ -108,231 +145,326 @@
 
             </div>
 
-        </section>
+        </div>
 
-        <hr>
+        <div class="card shadow-sm mb-4">
 
-        <h2 class="mt-5 mb-3">
-            More Information
-        </h2>
+            <div class="card-body">
 
-        <p>
-            For more information about me, please visit my
-
-            <a
-                href="https://www.linkedin.com/in/dominic-blood-288a4b236/"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                LinkedIn Profile
-
-            </a>.
-        </p>
-
-        <hr>
-
-        <h2 class="mt-5 mb-3">
-            Ask a Question
-        </h2>
-
-        <p>
-            If you would like to know more about my professional background,
-            research experience, or certifications, please complete the form
-            below.
-        </p>
-
-        <form
-            id="questionForm"
-            class="card shadow-sm p-4">
-
-            <fieldset class="border rounded p-3 mb-4">
-
-                <legend class="float-none w-auto px-2">
-                    Your Details
-                </legend>
-
-                <div class="mb-3">
-
-                    <label
-                        for="firstname"
-                        class="form-label">
-
-                        First Name
-
-                    </label>
-
-                    <input
-                        type="text"
-                        id="firstname"
-                        name="firstname"
-                        class="form-control"
-                        required>
-
-                </div>
-
-                <div class="mb-3">
-
-                    <label
-                        for="surname"
-                        class="form-label">
-
-                        Surname
-
-                    </label>
-
-                    <input
-                        type="text"
-                        id="surname"
-                        name="surname"
-                        class="form-control"
-                        required>
-
-                </div>
-
-                <div class="mb-3">
-
-                    <label
-                        for="email"
-                        class="form-label">
-
-                        Email Address
-
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="form-control"
-                        required>
-
-                </div>
-
-            </fieldset>
-
-            <fieldset class="border rounded p-3 mb-4">
-
-                <legend class="float-none w-auto px-2">
-                    Question Type
-                </legend>
-
-                <div class="form-check">
-
-                    <input
-                        class="form-check-input"
-                        type="radio"
-                        id="background"
-                        name="questiontype"
-                        value="Professional Background"
-                        required>
-
-                    <label
-                        class="form-check-label"
-                        for="background">
-
-                        Professional Background
-
-                    </label>
-
-                </div>
-
-                <div class="form-check">
-
-                    <input
-                        class="form-check-input"
-                        type="radio"
-                        id="research"
-                        name="questiontype"
-                        value="Research Experience">
-
-                    <label
-                        class="form-check-label"
-                        for="research">
-
-                        Research Experience
-
-                    </label>
-
-                </div>
-
-                <div class="form-check">
-
-                    <input
-                        class="form-check-input"
-                        type="radio"
-                        id="certification"
-                        name="questiontype"
-                        value="Certification Advice">
-
-                    <label
-                        class="form-check-label"
-                        for="certification">
-
-                        Certification Advice
-
-                    </label>
-
-                </div>
-
-            </fieldset>
-
-            <div class="mb-3">
-
-                <label
-                    for="question"
-                    class="form-label">
-
-                    Your Question
-
-                </label>
-
-                <textarea
-                    id="question"
-                    name="question"
-                    rows="6"
-                    class="form-control"
-                    required></textarea>
-
-            </div>
-
-            <div class="mt-3">
-
-                <button
-                    type="submit"
-                    class="btn btn-primary">
-
-                    Submit Question
-
-                </button>
-
-                <button
-                    type="reset"
-                    class="btn btn-secondary">
-
-                    Clear Form
-
-                </button>
-
-            </div>
-
-        </form>
-
-        <section
-            id="confirmationSection"
-            class="alert alert-success mt-4">
-
-            <h2>
-                Submission Confirmation
-            </h2>
-
-            <div id="confirmation">
+                <h2 class="h2 mb-3">
+                    More Information
+                </h2>
 
                 <p>
-                    No questions have been submitted yet.
+                    For more information about me, please visit my
+                    <a
+                        href="https://www.linkedin.com/in/dominic-blood-288a4b236/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        LinkedIn Profile
+
+                    </a>.
                 </p>
 
             </div>
 
-        </section>
+        </div>
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <h2 class="h2 mb-3">
+                    Ask a Question
+                </h2>
+
+                <p>
+                    If you would like to know more about my professional
+                    background, research experience, or certifications,
+                    please complete the form below.
+                </p>
+
+                <form id="questionForm">
+
+                    <fieldset class="border rounded p-3 mb-4">
+
+                        <legend class="float-none w-auto px-2">
+                            Your Details
+                        </legend>
+
+                        <div class="mb-3">
+
+                            <label
+                                for="firstname"
+                                class="form-label">
+
+                                First Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstname"
+                                class="form-control"
+                                required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label
+                                for="surname"
+                                class="form-label">
+
+                                Surname
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="surname"
+                                class="form-control"
+                                required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label
+                                for="email"
+                                class="form-label">
+
+                                Email Address
+
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control"
+                                required>
+
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="border rounded p-3 mb-4">
+
+                        <legend class="float-none w-auto px-2">
+                            Question Type
+                        </legend>
+
+                        <div class="form-check">
+
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                id="background"
+                                name="questiontype"
+                                value="Professional Background"
+                                required>
+
+                            <label
+                                class="form-check-label"
+                                for="background">
+
+                                Professional Background
+
+                            </label>
+
+                        </div>
+
+                        <div class="form-check">
+
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                id="research"
+                                name="questiontype"
+                                value="Research Experience">
+
+                            <label
+                                class="form-check-label"
+                                for="research">
+
+                                Research Experience
+
+                            </label>
+
+                        </div>
+
+                        <div class="form-check">
+
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                id="certification"
+                                name="questiontype"
+                                value="Certification Advice">
+
+                            <label
+                                class="form-check-label"
+                                for="certification">
+
+                                Certification Advice
+
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+                    <div class="mb-3">
+
+                        <label
+                            for="question"
+                            class="form-label">
+
+                            Your Question
+
+                        </label>
+
+                        <textarea
+                            id="question"
+                            rows="6"
+                            class="form-control"
+                            required></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Submit Question
+
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="btn btn-secondary">
+
+                        Clear Form
+
+                    </button>
+
+                </form>
+
+                <section
+                    id="confirmationSection"
+                    class="alert alert-success mt-4">
+
+                    <h3>
+                        Submission Confirmation
+                    </h3>
+
+                    <div id="confirmation">
+
+                        <p>
+                            No questions have been submitted yet.
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
 
     </main>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#confirmationSection").hide();
+
+            $("#certificationImage").hover(
+
+                function () {
+                    $(this).fadeTo(300, 0.7);
+                },
+
+                function () {
+                    $(this).fadeTo(300, 1);
+                }
+
+            );
+
+        });
+
+        document
+            .getElementById("questionForm")
+            .addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const firstName =
+                    document.getElementById("firstname").value;
+
+                const surname =
+                    document.getElementById("surname").value;
+
+                const question =
+                    document.getElementById("question").value;
+
+                const questionType =
+                    document.querySelector(
+                        'input[name="questiontype"]:checked'
+                    ).value;
+
+                document.getElementById("confirmation").innerHTML =
+
+                    "<p><strong>Thank you " +
+                    firstName +
+                    " " +
+                    surname +
+                    ".</strong></p>" +
+
+                    "<p>Your question has been successfully received.</p>" +
+
+                    "<p><strong>Question Type:</strong> " +
+                    questionType +
+                    "</p>" +
+
+                    "<p><strong>Your Question:</strong> " +
+                    question +
+                    "</p>";
+
+                $("#confirmationSection").slideDown(1000);
+
+            });
+
+        fetch("https://api.spaceflightnewsapi.net/v4/articles/?limit=1")
+
+            .then(response => response.json())
+
+            .then(data => {
+
+                const article = data.results[0];
+
+                document.getElementById("newsContainer").innerHTML =
+
+                    "<h4>" + article.title + "</h4>" +
+
+                    "<p>" + article.summary + "</p>" +
+
+                    "<p><strong>Source:</strong> " +
+                    article.news_site +
+                    "</p>" +
+
+                    "<a class='btn btn-outline-primary' href='" +
+                    article.url +
+                    "' target='_blank'>Read Full Article</a>";
+
+            });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
