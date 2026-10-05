@@ -9,6 +9,7 @@
     <title>Dom Blood Portfolio of Works V1</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -52,6 +53,7 @@
         <figure>
 
             <img 
+                id="certificationImage"
                 src="cert.png"
                 alt="Microsoft Certified AI Transformation Leader Certification">
 
@@ -248,124 +250,164 @@
 
     </main>
 
-    <script>
+   <script>
+
+    /*
+     * jQuery Enhancements
+     */
+
+    $(document).ready(function () {
 
         /*
-         * Question Form Functionality
+         * Hide confirmation section until
+         * a form submission occurs.
          */
 
-        document
-            .getElementById("questionForm")
-            .addEventListener("submit", function (event) {
-
-                event.preventDefault();
-
-                const firstName =
-                    document.getElementById("firstname").value;
-
-                const surname =
-                    document.getElementById("surname").value;
-
-                const question =
-                    document.getElementById("question").value;
-
-                const questionType =
-                    document.querySelector(
-                        'input[name="questiontype"]:checked'
-                    ).value;
-
-                document.getElementById("confirmation").innerHTML =
-
-                    "<p><strong>Thank you " +
-                    firstName +
-                    " " +
-                    surname +
-                    ".</strong></p>" +
-
-                    "<p>Your question has been successfully received.</p>" +
-
-                    "<p><strong>Question Type:</strong> " +
-                    questionType +
-                    "</p>" +
-
-                    "<p><strong>Your Question:</strong> " +
-                    question +
-                    "</p>";
-
-            });
+        $("#confirmationSection").hide();
 
         /*
-         * Technology News API Integration
+         * Certification image hover effect.
          */
 
-        fetch("https://api.spaceflightnewsapi.net/v4/articles/?limit=1")
+        $("#certificationImage").hover(
 
-            .then(function (response) {
+            function () {
 
-                if (!response.ok) {
+                $(this).fadeTo(300, 0.7);
 
-                    throw new Error(
-                        "Unable to retrieve article."
-                    );
+            },
 
-                }
+            function () {
 
-                return response.json();
+                $(this).fadeTo(300, 1);
 
-            })
+            }
 
-            .then(function (data) {
+        );
 
-                const article = data.results[0];
+    });
 
-                document.getElementById("newsContainer").innerHTML =
+    /*
+     * Question Form Functionality
+     */
 
-                    "<article>" +
+    document
+        .getElementById("questionForm")
+        .addEventListener("submit", function (event) {
 
-                    "<h3>" +
-                    article.title +
-                    "</h3>" +
+            event.preventDefault();
 
-                    "<p>" +
-                    article.summary +
-                    "</p>" +
+            const firstName =
+                document.getElementById("firstname").value;
 
-                    "<p><strong>Source:</strong> " +
-                    article.news_site +
-                    "</p>" +
+            const surname =
+                document.getElementById("surname").value;
 
-                    "<p><strong>Published:</strong> " +
-                    new Date(
-                        article.published_at
-                    ).toLocaleDateString('en-GB') +
-                    "</p>" +
+            const question =
+                document.getElementById("question").value;
 
-                    "<p>" +
-                    "<a href='" +
-                    article.url +
-                    "' target='_blank' rel='noopener noreferrer'>" +
-                    "Read Full Article" +
-                    "</a>" +
-                    "</p>" +
+            const questionType =
+                document.querySelector(
+                    'input[name="questiontype"\]:checked'
+                ).value;
 
-                    "</article>";
+            document.getElementById("confirmation").innerHTML =
 
-            })
+                "<p><strong>Thank you " +
+                firstName +
+                " " +
+                surname +
+                ".</strong></p>" +
 
-            .catch(function (error) {
+                "<p>Your question has been successfully received.</p>" +
 
-                console.error(error);
+                "<p><strong>Question Type:</strong> " +
+                questionType +
+                "</p>" +
 
-                document.getElementById("newsContainer").innerHTML =
+                "<p><strong>Your Question:</strong> " +
+                question +
+                "</p>";
 
-                    "<p>" +
-                    "The latest technology article could not be loaded." +
-                    "</p>";
+            /*
+             * jQuery animation.
+             */
 
-            });
+            $("#confirmationSection").slideDown(1000);
 
-    </script>
+        });
 
+    /*
+     * Technology News API Integration
+     */
+
+    fetch("https://api.spaceflightnewsapi.net/v4/articles/?limit=1")
+
+        .then(function (response) {
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Unable to retrieve article."
+                );
+
+            }
+
+            return response.json();
+
+        })
+
+        .then(function (data) {
+
+            const article = data.results[0];
+
+            document.getElementById("newsContainer").innerHTML =
+
+                "<article>" +
+
+                "<h3>" +
+                article.title +
+                "</h3>" +
+
+                "<p>" +
+                article.summary +
+                "</p>" +
+
+                "<p><strong>Source:</strong> " +
+                article.news_site +
+                "</p>" +
+
+                "<p><strong>Published:</strong> " +
+                new Date(
+                    article.published_at
+                ).toLocaleDateString("en-GB") +
+                "</p>" +
+
+                "<p>" +
+                "<a href='" +
+                article.url +
+                "' target='_blank' rel='noopener noreferrer'>" +
+                "Read Full Article" +
+                "</a>" +
+                "</p>" +
+
+                "</article>";
+
+        })
+
+        .catch(function (error) {
+
+            console.error(error);
+
+            document.getElementById("newsContainer").innerHTML =
+
+                "<p>" +
+                "he latest technology article could not be loaded." +
+                "</p>";
+
+        });
+
+</script>
 </body>
 
 </html>
