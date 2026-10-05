@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Dom Blood's portfolio demonstrating Bootstrap 5, HTML forms, JavaScript, jQuery, responsive styling and REST API integration.">
+
+    <title>Dom Blood Portfolio of Works V2</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrapstrap.min.css
+
+    <!-- Existing custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Skip link for keyboard and screen-reader users -->
+    <a
+        class="visually-hidden-focusable position-absolute top-0 start-0 p-3 bg-dark text-white"
+        href="#mainContent">
+        Skip to main content
+    </a>
+
+    <!-- Responsive navigation -->
+    <nav
+        class="navbar       <a class="navbar-brand    Dom Blood Portfolio
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#portfolioNavigation"
+                aria-controls="portfolioNavigation"
+                aria-expanded="false"
+                aria-label="Open or close navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="portfolioNavigation">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        #overview
+                            Overview
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        #about
+                            About Me
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        #knowledge
+                            Web Technologies
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        #latestNews
+                            Technology News
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        #questionSection
+                            Ask a Question
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Portfolio header -->
+    <header
+        id="overview"
+        class="bg-primary text-white py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-8">
+
+                    <h1 class="display-4 fw-bold">
+                        Overview
+                    </h1>
+
+                    <p class="lead mb-0">
+                        This is a small demonstration of my portfolio of works.
+                        Whilst I am not a web developer, I have a keen interest
+                        in increasing my knowledge of web technologies and the
+                        development of web applications.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="card border-0 shadow text-dark">
+
+                        <div class="card-body">
+
+                            <h2 class="h5 card-title">
+                                Technologies Demonstrated
+                            </h2>
+
+                            <ul class="mb-0">
+                                <li>Semantic HTML</li>
+                                <li>Bootstrap 5</li>
+                                <li>Responsive design</li>
+                                <li>Accessible forms</li>
+                                <li>JavaScript and jQuery</li>
+                                <li>REST API integration</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main id="mainContent">
+
+        <!-- About Me -->
+        <section
+            id="about"
+            class="py-5"
+            aria-labelledby="aboutHeading">
+
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-7">
+
+                        <h2 id="aboutHeading" class="mb-4">
+                            About Me
+                        </h2>
+
+                        <p>
+                            My name is Dom Blood. I graduated from Sheffield
+                            Hallam University in 2024 with a First Class Honours
+                            degree in IT Consultancy. My dissertation was based
+                            on the needs and requirements of effective Enterprise
+                            Architecture practices within local authorities.
+                        </p>
+
+                        <p>
+                            Aptly titled
+                            <strong>
+                                "Bringing Enterprise Architecture (EA) Value to
+                                Local Government: A Case Study"
+                            </strong>,
+                            the research explored the benefits of Enterprise
+                            Architecture and how its practices could be utilised
+                            to avoid unnecessary costs within major project
+                            implementations.
+                        </p>
+
+                        <p>
+                            I have worked in Local Government for 8 years,
+                            progressing from a Level 2 Apprentice through to my
+                            Master's degree, while now working as an AI Architect.
+                            Recently, I obtained the Microsoft Certified AI
+                            Transformation Leader certification.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <figure class="card border-0 shadow-sm mb-0">
+
+                            cert.png
+
+                            <figcaption
+                                class="card-body text-center text-body-secondary">
+
+                                Microsoft Certified AI Transformation Leader
+                                Certification.
+
+                            </figcaption>
+
+                        </figure>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Web technology knowledge -->
+        <section
+            id="knowledge"
+            class="py-5 bg-white"
+            aria-labelledby="knowledgeHeading">
+
+            <div class="container">
+
+                <div class="row g-4">
+
+                    <div class="col-lg-8">
+
+                        <h2 id="knowledgeHeading" class="mb-4">
+                            My Current Knowledge of Web Technologies
+                        </h2>
+
+                        <p>
+                            My current knowledge of web technologies includes
+                            the fundamentals of HTML, CSS and JavaScript. I have
+                            recently started to explore these technologies
+                            further within my role, where I frequently use HTML
+                            in Power Automate workflows.
+                        </p>
+
+                        <p>
+                            I have also previously created an index.html page
+                            for a journal publication and continue to develop
+                            my knowledge through postgraduate study.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <aside
+                            class="card border-primary h-100"
+                            aria-labelledby="journalHeading">
+
+                            <div class="card-body">
+
+                                <h3
+                                    id="journalHeading"
+                                    class="h5 card-title">
+
+                                    Journal Information
+
+                                </h3>
+
+                                <p class="card-text">
+                                    Further information about the journal is
+                                    available in the DigiSasLab Call for Papers.
+                                </p>
+
+                                <a
+                                    class="btn btn-outline-primary"
+                                    href="https://www.digisaslab.org/wp-content/uploads/2024/02/CfP-2024-latest-20240129.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    View Call for Papers
+                                    <span class="visually-hidden">
+                                        (opens in a new tab)
+                                    </span>
+
+                                </a>
+
+                            </div>
+
+                        </aside>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- API technology news -->
+        <section
+            id="latestNews"
+            class="py-5"
+            aria-labelledby="newsHeading">
+
+            <div class="container">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-10">
+
+                        <h2 id="newsHeading" class="mb-3">
+                            Latest Technology News
+                        </h2>
+
+                        <p>
+                            As an AI Architect and technology enthusiast, I am
+                            interested in keeping up to date with developments
+                            across science, technology, artificial intelligence
+                            and innovation. The latest article below is retrieved
+                            dynamically using a public REST API when the page
+                            loads.
+                        </p>
+
+                        <div
+                            id="newsContainer"
+                            class="card border-0 shadow-sm mt-4"
+                            aria-live="polite"
+                            aria-busy="true">
+
+                            <div class="card-body">
+
+                                <div
+                                    class="d-flex align-items-center"
+                                    role="status">
+
+                                    <div
+                                        class="spinner-border text-primary me-3"
+                                        aria-hidden="true">
+                                    </div>
+
+                                    <span>
+                                        Loading latest technology news...
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- More information -->
+        <section
+            id="moreInformation"
+            class="py-5 bg-white"
+            aria-labelledby="moreInformationHeading">
+
+            <div class="container">
+
+                <div class="card bg-dark text-white border-0 shadow">
+
+                    <div class="card-body p-4 p-md-5">
+
+                        <div
+                            class="row align-items-center g-4">
+
+                            <div class="col-md-8">
+
+                                <h2
+                                    id="moreInformationHeading"
+                                    class="h3">
+
+                                    More Information
+
+                                </h2>
+
+                                <p class="mb-md-0">
+                                    For more information about my professional
+                                    experience and current work, please visit
+                                    my LinkedIn profile and feel free to connect
+                                    with me.
+                                </p>
+
+                            </div>
+
+                            <div class="col-md-4 text-md-end">
+
+                                <a
+                                    class="btn btn-light btn-lg"
+                                    href="https://www.linkedin.com/in/dominic-blood-288a4b236/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    Visit LinkedIn Profile
+                                    <span class="visually-hidden">
+                                        (opens in a new tab)
+                                    </span>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Question form -->
+        <section
+            id="questionSection"
+            class="py-5"
+            aria-labelledby="questionHeading">
+
+            <div class="container">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-9">
+
+                        <h2 id="questionHeading">
+                            Ask a Question
+                        </h2>
+
+                        <p class="mb-4">
+                            If you would like to know more about my professional
+                            background, research experience or certifications,
+                            please complete and submit the form below.
+                        </p>
+
+                        <form
+                            id="questionForm"
+                            class="card border-0 shadow-sm"
+                            novalidate>
+
+                            <div class="card-body p-4 p-md-5">
+
+                                <fieldset class="mb-4">
+
+                                    <legend class="h4 mb-3">
+                                        Your Details
+                                    </legend>
+
+                                    <p class="text-body-secondary">
+                                        Fields marked with an asterisk (*) are
+                                        required.
+                                    </p>
+
+                                    <div class="row g-3">
+
+                                        <div class="col-md-6">
+
+                                            <label
+                                                for="firstname"
+                                                class="form-label">
+
+                                                First Name *
+
+                                            </label>
+
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="firstname"
+                                                name="firstname"
+                                                autocomplete="given-name"
+                                                required>
+
+                                            <div class="invalid-feedback">
+                                                Please enter your first name.
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-6">
+
+                                            <label
+                                                for="surname"
+                                                class="form-label">
+
+                                                Surname *
+
+                                            </label>
+
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="surname"
+                                                name="surname"
+                                                autocomplete="family-name"
+                                                required>
+
+                                            <div class="invalid-feedback">
+                                                Please enter your surname.
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12">
+
+                                            <label
+                                                for="email"
+                                                class="form-label">
+
+                                                Email Address *
+
+                                            </label>
+
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="email"
+                                                name="email"
+                                                autocomplete="email"
+                                                aria-describedby="emailHelp"
+                                                required>
+
+                                            <div
+                                                id="emailHelp"
+                                                class="form-text">
+
+                                                Please enter a valid email
+                                                address.
+
+                                            </div>
+
+                                            <div class="invalid-feedback">
+                                                Please enter a valid email
+                                                address.
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </fieldset>
+
+                                <fieldset class="mb-4">
+
+                                    <legend class="h4 mb-3">
+                                        Question Type
+                                    </legend>
+
+                                    <p>
+                                        Please select the category that best
+                                        describes your question.
+                                    </p>
+
+                                    <div class="form-check mb-2">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            id="background"
+                                            name="questiontype"
+                                            value="Professional Background"
+                                            required>
+
+                                        <label
+                                            class="form-check-label"
+                                            for="background">
+
+                                            Professional Background
+
+                                        </label>
+
+                                    </div>
+
+                                    <div class="form-check mb-2">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            id="research"
+                                            name="questiontype"
+                                            value="Research Experience">
+
+                                        <label
+                                            class="form-check-label"
+                                            for="research">
+
+                                            Research Experience
+
+                                        </label>
+
+                                    </div>
+
+                                    <div class="form-check">
+
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            id="certification"
+                                            name="questiontype"
+                                            value="Certification Advice">
+
+                                        <label
+                                            class="form-check-label"
+                                            for="certification">
+
+                                            Certification Advice
+
+                                        </label>
+
+                                        <div class="invalid-feedback">
+                                            Please select a question type.
+                                        </div>
+
+                                    </div>
+
+                                </fieldset>
+
+                                <div class="mb-4">
+
+                                    <label
+                                        for="question"
+                                        class="form-label fw-semibold">
+
+                                        Your Question *
+
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        id="question"
+                                        name="question"
+                                        rows="6"
+                                        placeholder="Please enter your question here..."
+                                        required></textarea>
+
+                                    <div class="invalid-feedback">
+                                        Please enter your question.
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-2">
+
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary">
+
+                                        Submit Question
+
+                                    </button>
+
+                                    <button
+                                        type="reset"
+                                        class="btn btn-outline-secondary">
+
+                                        Clear Form
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                        <!-- Submission confirmation -->
+                        <section
+                            id="confirmationSection"
+                            class="mt-4"
+                            aria-labelledby="confirmationHeading"
+                            aria-live="polite"
+                            tabindex="-1">
+
+                            <div
+                                class="alert alert-success shadow-sm"
+                                role="status">
+
+                                <h2
+                                    id="confirmationHeading"
+                                    class="h4 alert-heading">
+
+                                    Submission Confirmation
+
+                                </h2>
+
+                                <div id="confirmation">
+
+                                    <p class="mb-0">
+                                        No questions have been submitted yet.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+
+        <div class="container text-center">
+
+            <p class="mb-0">
+                Dom Blood Portfolio of Works
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript bundle -->
+    https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js    </script>
+
+    <script>
+
+        /*
+         * jQuery Enhancements
+         */
+
+        $(document).ready(function () {
+
+            /*
+             * Hide the confirmation section until the
+             * form has been successfully submitted.
+             */
+
+            $("#confirmationSection").hide();
+
+            /*
+             * Apply an animation to the certification image
+             * when a pointer enters or leaves the image.
+             */
+
+            $("#certificationImage").hover(
+
+                function () {
+
+                    $(this).stop(true).fadeTo(300, 0.7);
+
+                },
+
+                function () {
+
+                    $(this).stop(true).fadeTo(300, 1);
+
+                }
+
+            );
+
+        });
+
+
+        /*
+         * Bootstrap Form Validation and Submission
+         */
+
+        const questionForm =
+            document.getElementById("questionForm");
+
+        questionForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+                /*
+                 * Prevent submission and display Bootstrap's
+                 * validation styling when the form is invalid.
+                 */
+
+                if (!questionForm.checkValidity()) {
+
+                    event.stopPropagation();
+
+                    questionForm.classList.add(
+                        "was-validated"
+                    );
+
+                    return;
+
+                }
+
+                const firstName =
+                    document
+                        .getElementById("firstname")
+                        .value
+                        .trim();
+
+                const surname =
+                    document
+                        .getElementById("surname")
+                        .value
+                        .trim();
+
+                const question =
+                    document
+                        .getElementById("question")
+                        .value
+                        .trim();
+
+                const questionType =
+                    document.querySelector(
+                        'input[name="questiontype"]:checked'
+                    ).value;
+
+                /*
+                 * Use textContent when adding user-entered
+                 * content to reduce the risk of HTML injection.
+                 */
+
+                const confirmation =
+                    document.getElementById("confirmation");
+
+                confirmation.replaceChildren();
+
+                const thankYouMessage =
+                    document.createElement("p");
+
+                const thankYouText =
+                    document.createElement("strong");
+
+                thankYouText.textContent =
+                    "Thank you " +
+                    firstName +
+                    " " +
+                    surname +
+                    ".";
+
+                thankYouMessage.appendChild(thankYouText);
+
+                const receivedMessage =
+                    document.createElement("p");
+
+                receivedMessage.textContent =
+                    "Your question has been successfully received.";
+
+                const typeMessage =
+                    document.createElement("p");
+
+                const typeLabel =
+                    document.createElement("strong");
+
+                typeLabel.textContent =
+                    "Question Type: ";
+
+                typeMessage.appendChild(typeLabel);
+
+                typeMessage.appendChild(
+                    document.createTextNode(questionType)
+                );
+
+                const questionMessage =
+                    document.createElement("p");
+
+                questionMessage.classList.add("mb-0");
+
+                const questionLabel =
+                    document.createElement("strong");
+
+                questionLabel.textContent =
+                    "Your Question: ";
+
+                questionMessage.appendChild(questionLabel);
+
+                questionMessage.appendChild(
+                    document.createTextNode(question)
+                );
+
+                confirmation.append(
+                    thankYouMessage,
+                    receivedMessage,
+                    typeMessage,
+                    questionMessage
+                );
+
+                /*
+                 * Display the confirmation using a jQuery
+                 * animation and move keyboard focus to it.
+                 */
+
+                $("#confirmationSection")
+                    .stop(true, true)
+                    .slideDown(1000, function () {
+
+                        document
+                            .getElementById(
+                                "confirmationSection"
+                            )
+                            .focus();
+
+                    });
+
+                questionForm.classList.add(
+                    "was-validated"
+                );
+
+            }
+        );
+
+
+        /*
+         * Clear validation and confirmation when
+         * the form is reset.
+         */
+
+        questionForm.addEventListener(
+            "reset",
+            function () {
+
+                questionForm.classList.remove(
+                    "was-validated"
+                );
+
+                $("#confirmationSection")
+                    .stop(true, true)
+                    .slideUp(500);
+
+            }
+        );
+
+
+        /*
+         * Technology News API Integration
+         */
+
+        const newsContainer =
+            document.getElementById("newsContainer");
+
+        fetch(
+            "https://api.spaceflightnewsapi.net/v4/articles/?limit=1"
+        )
+
+            .then(function (response) {
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Unable to retrieve the latest article."
+                    );
+
+                }
+
+                return response.json();
+
+            })
+
+            .then(function (data) {
+
+                if (
+                    !data.results ||
+                    data.results.length === 0
+                ) {
+
+                    throw new Error(
+                        "No technology articles were returned."
+                    );
+
+                }
+
+                const article = data.results[0];
+
+                /*
+                 * Construct the API result using DOM methods
+                 * rather than inserting untrusted API content
+                 * through innerHTML.
+                 */
+
+                const cardBody =
+                    document.createElement("div");
+
+                cardBody.className =
+                    "card-body p-4";
+
+                const articleElement =
+                    document.createElement("article");
+
+                const articleTitle =
+                    document.createElement("h3");
+
+                articleTitle.className =
+                    "h4 card-title";
+
+                articleTitle.textContent =
+                    article.title;
+
+                const articleSummary =
+                    document.createElement("p");
+
+                articleSummary.className =
+                    "card-text";
+
+                articleSummary.textContent =
+                    article.summary;
+
+                const source =
+                    document.createElement("p");
+
+                const sourceLabel =
+                    document.createElement("strong");
+
+                sourceLabel.textContent =
+                    "Source: ";
+
+                source.appendChild(sourceLabel);
+
+                source.appendChild(
+                    document.createTextNode(
+                        article.news_site
+                    )
+                );
+
+                const published =
+                    document.createElement("p");
+
+                const publishedLabel =
+                    document.createElement("strong");
+
+                publishedLabel.textContent =
+                    "Published: ";
+
+                published.appendChild(publishedLabel);
+
+                published.appendChild(
+                    document.createTextNode(
+                        new Date(
+                            article.published_at
+                        ).toLocaleDateString("en-GB")
+                    )
+                );
+
+                const articleLink =
+                    document.createElement("a");
+
+                articleLink.className =
+                    "btn btn-primary";
+
+                articleLink.href =
+                    article.url;
+
+                articleLink.target =
+                    "_blank";
+
+                articleLink.rel =
+                    "noopener noreferrer";
+
+                articleLink.textContent =
+                    "Read Full Article";
+
+                const newTabText =
+                    document.createElement("span");
+
+                newTabText.className =
+                    "visually-hidden";
+
+                newTabText.textContent =
+                    " (opens in a new tab)";
+
+                articleLink.appendChild(newTabText);
+
+                articleElement.append(
+                    articleTitle,
+                    articleSummary,
+                    source,
+                    published,
+                    articleLink
+                );
+
+                cardBody.appendChild(
+                    articleElement
+                );
+
+                newsContainer.replaceChildren(
+                    cardBody
+                );
+
+                newsContainer.setAttribute(
+                    "aria-busy",
+                    "false"
+                );
+
+            })
+
+            .catch(function (error) {
+
+                console.error(error);
+
+                const errorBody =
+                    document.createElement("div");
+
+                errorBody.className =
+                    "card-body";
+
+                const errorMessage =
+                    document.createElement("p");
+
+                errorMessage.className =
+                    "alert alert-warning mb-0";
+
+                errorMessage.setAttribute(
+                    "role",
+                    "alert"
+                );
+
+                errorMessage.textContent =
+                    "The latest technology article could not be loaded.";
+
+                errorBody.appendChild(
+                    errorMessage
+                );
+
+                newsContainer.replaceChildren(
+                    errorBody
+                );
+
+                newsContainer.setAttribute(
+                    "aria-busy",
+                    "false"
+                );
+
+            });
+
+    </script>
+
+</body>
+
+</html>
